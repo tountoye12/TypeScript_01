@@ -1,5 +1,5 @@
 
-class  Person {
+ export class  Person {
 
 
     private _age: number;
@@ -16,4 +16,21 @@ class  Person {
         }
         this._age = age;
     }
+
+    public get firstName(){
+        return this._first_Name;
+    }
+
+    public get lastName(){
+        return this._last_Name;
+    }
+
+    public set lastName(lastname:string){
+        this._last_Name = lastname;
+    }
+
+    public set firstName(firstname:string){
+        this._first_Name = firstname;
+    }
 }
+
